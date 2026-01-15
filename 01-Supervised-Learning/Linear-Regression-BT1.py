@@ -12,6 +12,7 @@ y1 = w1*155 + w0
 y2 = w1*160 + w0
 print('Input 155cm, true output 52kg, predicted output %.2fkg' % y1)
 print('Input 160cm, true output 56kg, predicted output %.2fkg' % y2)
+#Vẽ đồ thị 
 x_line = np.linspace(X.min(), X.max(), 100)
 y_line = w1 * x_line + w0
 plt.scatter(X, y, color = 'red')
