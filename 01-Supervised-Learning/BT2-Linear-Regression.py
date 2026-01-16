@@ -20,15 +20,15 @@ print(f"Coefficent beta_1: {beta_1:.2f}")
 print("\nMa tran:\n", final_matrix)
 x_predict = 7
 y_predict = beta_0 + beta_1 * x_predict
-print(f"Du doan: Hoc {x_predict} gio se duoc {y_predict:.2f} diem")
+print(f"Prediction: If you study {x_predict} hour, you will get {y_predict:.2f} score")
 
 plt.figure(figsize = (8, 6))
-plt.scatter(X, Y, color='blue', s=80, label ='Du lieu thuc te')
-plt.plot (X, Y_result, color='red', linewidth=2, label=f'Duong hoi quy: y={y_predict:.1f}')
-plt.scatter (x_predict, y_predict, color='green',label =f'Du doan 7h ({y_predict}đ)')
-plt.title ("Bieu do quan he giua gio hoc va diem thi")
-plt.xlabel("So gio hoc")
-plt.ylabel ("Diem thi")
+plt.scatter(X, Y, color='blue', s=80, label ='Actual facts')
+plt.plot (X, Y_result, color='red', linewidth=2, label=f'Path linear regression: y={y_predict:.1f}')
+plt.scatter (x_predict, y_predict, color='green',label =f'Prediction 7h ({y_predict}đ)')
+plt.title ("Chart about the link between study hours and test scores")
+plt.xlabel("Study duration")
+plt.ylabel ("Exam score")
 plt.grid(True)
 plt.show()
 
